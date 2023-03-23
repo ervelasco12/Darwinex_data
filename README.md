@@ -2,7 +2,7 @@
 
 This is a Python package to download historical quotes data of Darwinex darwins. 
 
-The darwins quotes available on the Darwinex FTP server are at a resolution of a second. 
+The darwins quotes available on the Darwinex FTP server are at a resolution of seconds. 
 
 Quotes data are returned as a Pandas dataframe. Can be stored as a pickle and resumed later.
 
