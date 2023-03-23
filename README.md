@@ -1,8 +1,12 @@
 # darwinex-data
 
-This is a Python package to download historical quotes data of Darwinex darwins. It gets the data available on the Darwinex FTP server, in resolution of a second. 
-Quotes data are returned as a Pandas dataframe, and can be stored as a pickle.
-Other types of darwin data are available at the FTP server, including time series and statistics which support the data and graphs shown on the DARWIN page. It is foreseen to enable their download in next releases.
+This is a Python package to download historical quotes data of Darwinex darwins. 
+
+The darwins quotes available on the Darwinex FTP server are at a resolution of a second. 
+
+Quotes data are returned as a Pandas dataframe. Can be stored as a pickle and resumed later.
+
+Other types of darwin data are available at the FTP server, including time series and statistics which support the data and graphs shown on the DARWIN page. It is foreseen to include their download in next releases.
 
 ##  Installation
 
@@ -20,7 +24,7 @@ The only required library to execute the notebook is Pandas.
 Together with your Darwinex user, you will need to request your Darwinex FTP access password at 
 **[REQUEST FTP ACCESS](https://www.darwinex.com/data/darwin-data)**
 
-Open the jupyter notebook darwinex-data.ipynb and execute it step by step.
+Open the **[darwinex_data.ipynb](https://github.com/ervelasco12/darwinex_data/blob/main/darwinex_data.ipynb)** notebook and execute it step by step.
 - Indicate your Darwinex username and FTP password
 - Start by connecting to the Darwinex FTP server
 - Get a list of available darwins, if you don't know which to download
@@ -32,7 +36,7 @@ Open the jupyter notebook darwinex-data.ipynb and execute it step by step.
 - Load the downloaded pickle data to work with it
 
 Remarks: 
-- There are gaps in the darwins available quotes. These will be represented as NAN in the Pandas dataframe, letting the user to check them before filling
+- There are gaps in the darwins available quotes. These are kept as NAN in the Pandas dataframe, letting the user to check them before filling, for instance, with previous values
 - Usually, each darwin has its historical data adjusted to VAR (Value At Risk) of 6.5%. It was established by Darwinex in may 2020. Before, the darwins had a VAR adjustment of 10%. These former var10 data is also available and can be optionally downloaded
 
 
@@ -43,7 +47,7 @@ If you find a bug or have an idea for a new feature, feel free to open an issue 
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for more information.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/ervelasco12/darwinex_data/blob/main/LICENSE.md) file for more information.
 
 ## Contact
 
