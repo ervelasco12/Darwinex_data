@@ -4,7 +4,7 @@ This is a Python package to download historical quotes data of Darwinex darwins.
 
 The darwins quotes available on the Darwinex FTP server are at a resolution of seconds. 
 
-Quotes data are returned as a Pandas dataframe. Can be stored as a pickle and resumed later.
+Quotes data are returned as a Pandas dataframe. There can be stored as a pickle file and resumed later.
 
 Other types of darwin data are available at the FTP server, including time series and statistics which support the data and graphs shown on the DARWIN page. It is foreseen to include their download in next releases.
 
@@ -27,8 +27,8 @@ Together with your Darwinex user, you will need to request your Darwinex FTP acc
 Open the **[darwinex_data.ipynb](https://github.com/ervelasco12/darwinex_data/blob/main/darwinex_data.ipynb)** notebook and execute it step by step.
 - Indicate your Darwinex username and FTP password
 - Start by connecting to the Darwinex FTP server
-- Get a list of available darwins, if you don't know which to download
-- For a specific list of darwins, get the available dates of quotes data to download, for a darwin may display more history on Darwinex
+- Get a list of available darwins, if you are unsure which ones to download
+- For a specific list of darwins, get the available dates of quotes data to download. A given darwin may have more history available on Darwinex
 - Download darwin quotes, for a specific list of darwins, and a specific start and end period. Notice that the amount of data to download is huge, so you may want to filter it
 - Indicate a path if you want to store the data as each darwin quotes are downloaded. It allows you to resume the dowloading process later, merging the newly downloading data with the existing one
 - Possibility to resample the data before storing it, indicating a Pandas rule frequency such as 'B'. You may want to reduce the stored data size if you don't need to work with a frequency of seconds
