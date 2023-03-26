@@ -8,15 +8,10 @@ Quotes data are returned as a Pandas dataframe. There can be stored as a pickle 
 
 Other types of darwin data are available at the FTP server, including time series and statistics which support the data and graphs shown on the DARWIN page. It is foreseen to include their download in next releases.
 
-##  Installation
-
-```
-pip install darwinex-data
-```
 
 ### Requirements
 
-The only required library to execute the notebook is Pandas.
+Pandas is required to execute the notebook.
 
 
 ## Usage
